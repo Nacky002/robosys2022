@@ -11,8 +11,8 @@ ng () {
 res=0
 
 out=$(seq 5 | ./plus)
-[ "${out}" = 14 ] || ng ${LINENO}      # out に 15 が入っていれば成功。
+[ "${out}" = 15 ] || ng ${LINENO}      # out に 15 が入っていれば成功。
 [ "$res" = 0 ] && echo TEST IS SUCCESS !!
 
-#echo $?    # 0 が出ればテスト成功
+echo $?    # 0 が出ればテスト成功
 exit $res
