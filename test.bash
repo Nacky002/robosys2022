@@ -15,7 +15,7 @@ res=0
 
 out=$(seq 5 | ./plus)
 [ "$?" = 0 ]      || ng ${LINENO}
-[ "${out}" = 15 ] || ng ${LINENO}    # out=15 で異常なし
+[ "${out}" = 19 ] || ng ${LINENO}    # out=15 で異常なし
 
 out=$(echo 1 2 3 4 5 | tr ' ' '\n' | ./plus)
 [ "$?" = 0 ]      || ng ${LINENO}
