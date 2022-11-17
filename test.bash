@@ -3,8 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
-    echo -e "\nNG at LINE $1"
-    echo TEST IS FAILED
+    echo -e "\nNG at LINE $1    TEST IS FAILED"
     res=1
     exit $res
 }
@@ -19,7 +18,7 @@ out=$(seq 5 | ./plus)
 
 out=$(echo 1 2 3 4 5 | tr ' ' '\n' | ./plus)
 [ "$?" = 0 ]      || ng ${LINENO}
-[ "${out}" = 15 ] || ng ${LINENO}
+[ "${out}" = 19 ] || ng ${LINENO}
 
 ##### STRANGE INPUT #####
 
@@ -28,7 +27,7 @@ out=$(echo 推し | ./plus)
 [ "${out}" = "" ] || ng ${LINENO}
 
 out=$(echo | ./plus)
-[ "$?" = 0 ]      || ng ${LINENO}
+[ "$?" = 1 ]      || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
 [ "$res" = 0 ] && echo -e "\nTEST IS SUCCESS !!"
