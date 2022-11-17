@@ -18,7 +18,7 @@ out=$(seq 5 | ./plus)
 
 out=$(echo 1 2 3 4 5 | tr ' ' '\n' | ./plus)
 [ "$?" = 0 ]      || ng ${LINENO}
-[ "${out}" = 19 ] || ng ${LINENO}
+[ "${out}" = 15 ] || ng ${LINENO}
 
 ##### STRANGE INPUT #####
 
