@@ -14,7 +14,7 @@ res=0
 
 out=$(seq 5 | ./avg)
 [ "$?" = 0 ]         || ng ${LINENO}
-[ "${out}" = "3.0" ] || ng ${LINENO}    # out=15 で異常なし
+[ "${out}" = "3.0" ] || ng ${LINENO}
 
 out=$(echo 1.30 2 3.40 4.80 5 | tr ' ' '\n' | ./avg)
 [ "$?" = 0 ]         || ng ${LINENO}
@@ -32,4 +32,4 @@ out=$(echo | ./avg)
 
 [ "$res" = 0 ] && echo -e "\nTEST IS SUCCESS !!"
 
-exit $res                            # このシェルスクリプトの終了ステータスを返して終了
+exit $res       # このシェルスクリプトの終了ステータスを返して終了
