@@ -13,13 +13,13 @@ for line in sys.stdin:
 
 ave = ans / item
 
-print('### 入力情報 ###\n')
-print('要素数 : ', end='')
+print('### 入力情報 ###')
+print('\n要素数 : ', end='')
 print(item)
-print('\n### 出力情報 ###\n')
-print('要素の総和 : ', end='')
+print('\n### 出力情報 ###')
+print('\n要素の総和 : ', end='')
 print(ans)
-print('要素の平均値 : ', end = '')
+print('\n要素の平均値 : ', end = '')
 print(ave)
 print('')
 
