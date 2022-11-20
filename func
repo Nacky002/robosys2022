@@ -1,0 +1,25 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 NAGAKI Yuki
+# SPDX-License-Identifier: BSD-3-Clause
+
+import sys
+
+ans = 0
+item = 0
+
+for line in sys.stdin:
+    ans += float(line)
+    item += 1
+
+ave = ans / item
+
+print('### 入力情報 ###\n')
+print('要素数 : ', end='')
+print(item)
+print('\n### 出力情報 ###\n')
+print('要素の総和 : ', end='')
+print(ans)
+print('要素の平均値 : ', end = '')
+print(ave)
+print('')
+
