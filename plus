@@ -2,7 +2,11 @@
 # SPDX-FileCopyrightText: 2022 NAGAKI Yuki
 # SPDX-License-Identifier: BSD-3-Clause
 
+### 標準入力から読み込んだ数字を足す ###
+
 import sys
+
+# ans = [ float(line) for line in sys.stdin ]   # 内包表記
 
 ans = 0
 
