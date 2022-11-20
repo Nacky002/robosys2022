@@ -1,6 +1,4 @@
-# robosys2022
-
-## コマンド
+# robosys2022 コマンド
 ![test](https://github.com/Nacky002/robosys2022/actions/workflows/test.yml/badge.svg)
 
 * plus
