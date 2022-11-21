@@ -13,22 +13,22 @@ res=0
 ##### I/O #####
 
 out=$(seq 5 | ./stan)
-[ "$?" = 0 ]           || ng ${LINENO}
+[ "$?" = 0 ]                        || ng ${LINENO}
 [ "${out}" = "1.4142135623730951" ] || ng ${LINENO}
 
 out=$(echo 1.30 2 3.40 4.80 5 | tr ' ' '\n' | ./stan)
-[ "$?" = 0 ]           || ng ${LINENO}
-[ "${out}" = "2.168" ] || ng ${LINENO}
+[ "$?" = 0 ]                        || ng ${LINENO}
+[ "${out}" = "1.472412985544477" ]  || ng ${LINENO}
 
 ##### STRANGE INPUT #####
 
 out=$(echo 推し | ./stan)
-[ "$?" = 1 ]           || ng ${LINENO}
-[ "${out}" = "" ]      || ng ${LINENO}
+[ "$?" = 1 ]                        || ng ${LINENO}
+[ "${out}" = "" ]                   || ng ${LINENO}
 
 out=$(echo | ./stan)
-[ "$?" = 1 ]           || ng ${LINENO}
-[ "${out}" = "" ]      || ng ${LINENO}
+[ "$?" = 1 ]                        || ng ${LINENO}
+[ "${out}" = "" ]                   || ng ${LINENO}
 
 [ "$res" = 0 ] && echo -e "\nTEST IS SUCCESS !!"
 
