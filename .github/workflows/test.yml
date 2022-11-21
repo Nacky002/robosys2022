@@ -14,3 +14,5 @@ jobs:             #走らせたい処理（ジョブ）のリスト
       run: bash -xv ./avg.bash
     - name: vari test
       run: bash -xv ./vari.bash
+    - name: stan test
+      run: bash -xv ./stan.bash
