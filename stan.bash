@@ -14,7 +14,7 @@ res=0
 
 out=$(seq 5 | ./stan)
 [ "$?" = 0 ]           || ng ${LINENO}
-[ "${out}" = "2.0" ]   || ng ${LINENO}
+[ "${out}" = "1.4142135623730951" ] || ng ${LINENO}
 
 out=$(echo 1.30 2 3.40 4.80 5 | tr ' ' '\n' | ./stan)
 [ "$?" = 0 ]           || ng ${LINENO}
