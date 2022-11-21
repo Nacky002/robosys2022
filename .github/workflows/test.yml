@@ -12,3 +12,5 @@ jobs:             #走らせたい処理（ジョブ）のリスト
       run: bash -xv ./plus.bash  #テストのシェルスクリプトを走らせる
     - name: avg test
       run: bash -xv ./avg.bash
+    - name: vari test
+      run: bash -xv ./vari.bash
