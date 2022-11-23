@@ -30,12 +30,14 @@
 2.  ex.1, ex2 のように標準入力から数字を読み込む
     * ex.1  
     ```
-    $ seq 5 | ./plus
+    seq 5 | ./plus
     ```
     * ex.2  
     ```
-    $ echo 1 2 3 4 5 | tr ' ' '\n' | ./plus
+    echo 1 2 3 4 5 | tr ' ' '\n' | ./plus
     ```
+    **Note**
+    テスト
 
 ## 必要なソフトウェア
 * Python
