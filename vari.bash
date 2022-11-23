@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
-    echo -e "\nNG at LINE $1    TEST IS FAILED"
+    echo -e "NG at LINE $1    TEST IS FAILED"
     res=1
     exit $res
 }
@@ -22,14 +22,14 @@ out=$(echo 1.30 2 3.40 4.80 5 | tr ' ' '\n' | ./vari)
 
 ##### STRANGE INPUT #####
 
-out=$(echo 推し | ./vari)
+out=$(echo 推し | ./vari 2> /dev/null)
 [ "$?" = 1 ]           || ng ${LINENO}
 [ "${out}" = "" ]      || ng ${LINENO}
 
-out=$(echo | ./vari)
+out=$(echo | ./vari 2> /dev/null)
 [ "$?" = 1 ]           || ng ${LINENO}
 [ "${out}" = "" ]      || ng ${LINENO}
 
-[ "$res" = 0 ] && echo -e "\nTEST IS SUCCESS !!"
+[ "$res" = 0 ] && echo -e "TEST IS SUCCESS !!"
 
 exit $res       # このシェルスクリプトの終了ステータスを返して終了
