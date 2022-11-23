@@ -41,13 +41,13 @@
     * 成功の場合
     ```
     TEST IS SUCCESS !!
-    ```
+    ```  
         * 終了ステータスは 0
 
     * 失敗の場合
     ```
     NG at LINE 17    TEST IS FAILED
-    ```
+    ```  
         * 終了ステータスは 1
         * 17 は、問題が起きた plus.bash 内の行番号
 
