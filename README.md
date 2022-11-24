@@ -57,7 +57,7 @@
     ./plus < example
     ```
 
-    * ファイル `example` の中身
+    * 例として作成したファイル `example` の中身
     ```
     5
     10
