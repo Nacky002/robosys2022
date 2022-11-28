@@ -30,7 +30,7 @@ out=$(echo | ./plus 2> /dev/null)
 
 ###  avg test  ###
 
-out=$(seq 5 | ./avg)$
+out=$(seq 5 | ./avg)
 [ "$?" = 0 ]         || ng ${LINENO}
 [ "${out}" = "3.0" ] || ng ${LINENO}
 
