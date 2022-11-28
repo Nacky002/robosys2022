@@ -26,7 +26,7 @@
 * 任意のディレクトリでクローン
 
     ```
-    $ git clone https://github.com/Nacky002/robosys2022/tree/main
+    $ git clone git@github.com:Nacky002/robosys2022.git
     $ cd robosys2022
     ```
 
